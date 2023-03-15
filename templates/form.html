@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Incident declaration form</h2>
+<form action="" method="post">
+    <p>
+        {{form.mail.label}}<br>
+        {{form.mail(size=30)}}
+    </p>
+    <p>
+        {{form.name.label}}<br>
+        {{form.name(size=30)}}
+    </p>
+    <p>
+        {{form.role.label}}<br>
+        {{form.role(size=30)}}
+    </p>
+    <p>
+        {{form.organization.label}}<br>
+        {{form.organization(size=30)}}
+    </p>
+    <p>
+        {{form.deviceID.label}}<br>
+        {{form.deviceID(size=30)}}
+    </p>
+    <p>
+        {{form.date.label}}<br>
+        {{form.date(size=30)}}
+    </p>
+    <p>
+        {{form.comment.label}}<br>
+        {{form.comment(size=6)}}
+    </p>
+    <p>
+        {{form.bugTitle.label}}<br>
+        {{form.bugTitle(size=30)}}
+    </p>
+    <p>
+        {{form.busDesc.label}}<br>
+        {{form.busDesc(size=30)}}
+    </p>
+    <p>
+        {{form.reproduction.label}}<br>
+        {{form.reproduction(size=2)}}
+    </p>
+    <p>
+        {{form.version.label}}<br>
+        {{form.version(size=30)}}
+    </p>
+    <p>{{form.submit()}}</p>
+</form>
+
+{% endblock %}
